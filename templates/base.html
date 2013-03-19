@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Theisen Sanders</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link href="{{ url_for('static', filename="css/bootstrap.min.css") }}" rel="stylesheet">
+    <style type="text/css">
+
+        html,
+        body {
+            height: 100%;
+            /* The html and body elements cannot have any padding or margin. */
+        }
+
+        /* Wrapper for page content to push down footer */
+        #wrap {
+            min-height: 100%;
+            height: auto !important;
+            height: 100%;
+            /* Negative indent footer by it's height */
+            margin: 0 auto -40px;
+        }
+
+        /* Set the fixed height of the footer here */
+        #push,
+        #footer {
+            height: 40px;
+        }
+
+        /* Lastly, apply responsive CSS fixes as necessary */
+        @media (max-width: 767px) {
+            #footer {
+                margin-left: -20px;
+                margin-right: -20px;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+
+            /* Main marketing message and sign up button */
+        .jumbotron {
+            margin: 80px 0;
+            text-align: center;
+        }
+        .jumbotron h1 {
+            font-size: 100px;
+            line-height: 1;
+        }
+        .jumbotron .lead {
+            font-size: 24px;
+            line-height: 1.25;
+        }
+        .jumbotron .btn {
+            font-size: 21px;
+            padding: 14px 24px;
+        }
+
+            /* Supporting marketing content */
+        .marketing {
+            margin: 60px 0;
+        }
+        .marketing p + h4 {
+            margin-top: 28px;
+        }
+
+    </style>
+    <link href="{{ url_for('static', filename="css/bootstrap-responsive.min.css") }}" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div id="wrap">
+    <div class="container">
+
+        <!-- Jumbotron -->
+        <div class="jumbotron">
+            <h1>Theisen Sanders</h1>
+            <p class="lead" style="color: darkorange">Website Under Construction</p>
+        </div>
+
+        <div id="push"></div>
+    </div>
+</div>
+
+<div id="footer">
+    <div class="container">
+        <p class="muted credit">&copy; Theisen Sanders 2013</p>
+    </div>
+</div>
+
+<script src="{{ url_for('static', filename="js/jquery-1.9.1.min.js") }}"></script>
+<script src="{{ url_for('static', filename="js/bootstrap.min.js") }}"></script>
+
+</body>
+</html>
