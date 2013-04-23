@@ -1,12 +1,16 @@
 import os
 from flask import Flask, render_template
 
+import settings
+
 app = Flask(__name__)
 app.debug = True
 
+app.config.from_object(settings)
+
 @app.route('/')
-def hello():
-    return render_template('base.html')
+def home():
+    return render_template('home.html')
 
 if __name__ == '__main__':
     # Bind to PORT if defined, otherwise default to 5000.
