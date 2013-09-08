@@ -417,10 +417,10 @@ a:hover {
 }
 
 #section3 img:hover {
-   -moz-transform: scale(1.05);
-   -o-transform: scale(1.05);
-   -webkit-transform: scale(1.05);
-   transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 #section3 .img-wrapper {
@@ -842,7 +842,3 @@ a:hover {
     }
 
 }
-
-
-
-

@@ -1,5 +1,18 @@
 ---
 layout: default
+css:
+- /assets/css/blog.css
 ---
 
-{{ content }}
+<header>
+    <a href="/"><h1>Theisen Sanders</h1></a>
+</header>
+
+<div id="post-content">
+    <div class="post" class="container">
+        <div class="title"><h1>{{ page.title }}</h1></div>
+        Tags: {{ page.tags | array_to_sentence_string }}
+
+        {{ content }}
+    </div>
+</div>
