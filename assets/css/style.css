@@ -791,7 +791,7 @@ a:hover {
 @media screen and (min-width: 481px) {
 
     #section1 {
-        background-image: url(../img/landing.jpg);
+        /*background-image: url(../img/landing.jpg);*/
     }
 
 }
