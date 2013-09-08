@@ -1,7 +1,4 @@
-Website v1.0 Launched!
-===
-
-Between work and school, I've had minimal time to work on my portfolio. But step 1, was getting
+Between work and school, I've had minimal time to work on my portfolio. But step 1 was getting
 this website up and running.
 
 My Strange Build Process:
