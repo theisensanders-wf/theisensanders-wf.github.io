@@ -271,35 +271,18 @@
 
             <div class="span8 slide current" data-blog="blog">
                 <div class="row-fluid">
+                    {% for post in site.posts limit:2  %}
                     <div class="span6 expand">
-                        <h4>Blog Post 1</h4>
+                        <h4 href="{{ post.url }}">{{ post.title }}</h4>
 
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting
-                            industry. Lorem Ipsum has been the industry's standard dummy text
-                            ever
-                            since the 1500s, when an unknown printer took a galley of type and
-                            scrambled it to make a type specimen book.</p>
+                        <p>{{ post.excerpt }}</p>
 
                         <div class="pull-right read-more">
-                            <a href="#" rel="external">Read More
+                            <a href="{{ post.url }}">Read More
                                 <i class="icon-double-angle-right"></i></a>
                         </div>
                     </div>
-                    <div class="span6 visible-desktop">
-                        <h4>Blog Post 2</h4>
-
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting
-                            industry. Lorem Ipsum has been the industry's standard dummy text
-                            ever
-                            since the 1500s, when an unknown printer took a galley of type and
-                            scrambled it to make a type specimen book.</p>
-
-                        <div class="pull-right read-more">
-                            <a href="#" rel="external">Read More
-                                <i class="icon-double-angle-right"></i></a>
-                        </div>
-                    </div>
-
+                    {% endfor %}
                 </div>
             </div>
 
