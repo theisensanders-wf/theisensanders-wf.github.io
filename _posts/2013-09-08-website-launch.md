@@ -1,3 +1,10 @@
+---
+layout: post
+title: Website Launch
+tags:
+- website
+---
+
 Between work and school, I've had minimal time to work on my portfolio. But step 1 was getting
 this website up and running.
 

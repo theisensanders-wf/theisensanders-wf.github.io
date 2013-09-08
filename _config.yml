@@ -1,6 +1,8 @@
 markdown:      maruku
 markdown_ext:  md
 
+permalink: /posts/:title
+
 url: http://theisensanders.com
 title: Theisen Sanders
 subtitle: idk
