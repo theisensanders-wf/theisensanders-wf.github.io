@@ -62,16 +62,39 @@ title: "Main"
         <div class="row-fluid desc">
             <div class="span8">
                 <p>
-                    I am a senior in Computer Science at Iowa State University. I have a wide
-                    array
-                    of experience in programming languages and projects. The bulk of my
-                    experience
-                    comes from attending school at
-                    <a style="color: #cc0000; font-weight: bold" href="http://www.iastate.edu/">Iowa
-                        State University</a>
-                    while working at
-                    <a style="color: #7BCE05; font-weight: bold" href="https://www.webfilings.com/">WebFilings</a>.
+                    Hi! My name is Theisen (pronounced "TY sen"). I am a senior in Computer Science
+                    at Iowa State University.
+                    I will be graduating from Iowa State in December 2013.
                 </p>
+
+                <p>
+                    Although newer to the the software development world, I have more than earned
+                    back my share of knowledge about all
+                    things computers. In just the last two years I have become quite accomplished at
+                    a select few programming languages,
+                    while making sure I have a little bit of knowledge in a lot of places. My
+                    experience comes mainly from my classes
+                    at Iowa State and my internship at WebFilings which I began in Nov. 2011.
+                </p>
+
+                <p>
+                    It's hard to believe that in just 2 years I've gone from an "Intro to Java"
+                    course to a course I'm currently taking
+                    in Artificial Intelligence. I've also taken several database systems, project
+                    management, and operating system classes.
+                </p>
+
+                <p>
+                    I joined the WebFilings company in its early stages and it has been amazing to
+                    see it grow, and to grow along with it.
+                    When I joined I had a half-semester of programming experience so I was put into
+                    QA and spent most of my time on manual
+                    regression testing. Quickly though, I was able to put what I was learning in
+                    school to use. I moved to a QA Test dev position
+                    where I worked on a team that created an automated test builder to eliminate the
+                    need for our manual regression testing. Finally,
+                    I was able to move into a developer role where I could experience the pressure
+                    of customer-facing changes and full-on agile methodology.
 
                 <p>My programming experience includes (but is not limited to):</p>
 
@@ -83,6 +106,7 @@ title: "Main"
                             <li>Java</li>
                             <li>C/C++</li>
                             <li>Javascript *</li>
+                            <li>SQL</li>
                             <li>HTML</li>
                             <li>CSS/LESS/SASS</li>
                             <li>Scheme</li>
@@ -101,7 +125,12 @@ title: "Main"
                         </ul>
                     </div>
                 </div>
-                <em>* My favorite things to use</em>
+                <em>* My favorite tools</em>
+
+                <div style="margin-top: 20px;">
+                    <p>If you have a project and my skills could be useful to you, please
+                        <a href="#section5">contact</a> me.</p>
+                </div>
             </div>
         </div>
     </div>
@@ -119,7 +148,7 @@ title: "Main"
         </div>
         <div class="row-fluid desc">
             <div class="span8">
-                <p>Below are some of the recent projects I've worked on. </p>
+                <p>Below are some of the recent projects I've worked on.</p>
             </div>
         </div>
 
@@ -170,31 +199,31 @@ title: "Main"
             </div>
         </div>
 
-        <div class="row-fluid desc">
-            <div class="span8">
-                <p>Some other notable projects: </p>
-                <ul id="other-projects">
-                    <li>I worked on a team that created an <b>automated testing framework</b>.
-                        Non-developers needed to be able to build automated tests
-                        <span class="read-more">... Read more <i class="icon-double-angle-right"></i></span>
-                    </li>
-                    <li>I joined a team working a web application that requires constant <b>email
-                        communication</b> between the app and users. The code for sending out
-                        these emails
-                        was messy, unreliable, and poorly tested. I refactored the code to be
-                        half as many lines, and added unit tests until code coverage was at 100%
-                        <span class="read-more">... Read more <i class="icon-double-angle-right"></i></span>
-                    </li>
-                    <li>I developed a <b>political website</b> for my dad who is seeking
-                        re-election as one of our county's supervisors. I've never been
-                        comfortable with using
-                        content management systems such as wordpress, so I built a fully
-                        functioning blog on the python backend
-                        <span class="read-more">... Read more <i class="icon-double-angle-right"></i></span>
-                    </li>
-                </ul>
-            </div>
-        </div>
+        <!--<div class="row-fluid desc">-->
+        <!--<div class="span8">-->
+        <!--<p>Some other notable projects: </p>-->
+        <!--<ul id="other-projects">-->
+        <!--<li>I worked on a team that created an <b>automated testing framework</b>.-->
+        <!--Non-developers needed to be able to build automated tests-->
+        <!--<span class="read-more">... Read more <i class="icon-double-angle-right"></i></span>-->
+        <!--</li>-->
+        <!--<li>I joined a team working a web application that requires constant <b>email-->
+        <!--communication</b> between the app and users. The code for sending out-->
+        <!--these emails-->
+        <!--was messy, unreliable, and poorly tested. I refactored the code to be-->
+        <!--half as many lines, and added unit tests until code coverage was at 100%-->
+        <!--<span class="read-more">... Read more <i class="icon-double-angle-right"></i></span>-->
+        <!--</li>-->
+        <!--<li>I developed a <b>political website</b> for my dad who is seeking-->
+        <!--re-election as one of our county's supervisors. I've never been-->
+        <!--comfortable with using-->
+        <!--content management systems such as wordpress, so I built a fully-->
+        <!--functioning blog on the python backend-->
+        <!--<span class="read-more">... Read more <i class="icon-double-angle-right"></i></span>-->
+        <!--</li>-->
+        <!--</ul>-->
+        <!--</div>-->
+        <!--</div>-->
 
     </div>
 </section>
@@ -231,7 +260,7 @@ title: "Main"
 
             <div class="span8 slide current" data-blog="blog">
                 <div class="row-fluid">
-                    {% for post in site.posts limit:2  %}
+                    {% for post in site.posts limit:2 %}
                     <div class="span6 expand">
                         <h4 href="{{ post.url }}">{{ post.title }}</h4>
 
@@ -278,16 +307,16 @@ title: "Main"
                                 <i class="icon-double-angle-right"></i></a>
                         </div>
                     </div>
-                    <div class="span6 visible-desktop">
-                        <h4>Python Chat Client</h4>
+                    <!--<div class="span6 visible-desktop">-->
+                    <!--<h4>Python Chat Client</h4>-->
 
-                        <p>Python chat client that uses sockets to send/receive messages</p>
+                    <!--<p>Python chat client that uses sockets to send/receive messages</p>-->
 
-                        <div class="pull-right read-more">
-                            <a href="#" rel="external">Repo
-                                <i class="icon-double-angle-right"></i></a>
-                        </div>
-                    </div>
+                    <!--<div class="pull-right read-more">-->
+                    <!--<a href="#" rel="external">Repo-->
+                    <!--<i class="icon-double-angle-right"></i></a>-->
+                    <!--</div>-->
+                    <!--</div>-->
                 </div>
             </div>
 
@@ -307,7 +336,7 @@ title: "Main"
         </div>
         <div class="row-fluid content">
             <div class="span4">
-                <h4 class="intro">Drop me a line!</h4>
+                <h4 class="intro">Questions? Comments?</h4>
 
                 <p>Contact me using any of the information below. Or fill out this contact
                     form!</p>

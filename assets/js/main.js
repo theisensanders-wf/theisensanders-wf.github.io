@@ -131,8 +131,7 @@ $(document).ready(function ($) {
         'n Iowa State student',
         ' traveller',
         ' computer science major',
-        ' web developer',
-        ' movie addict'
+        ' web developer'
     ];
 
     var counter = 0;
