@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    background-color: #1abc9c;
 }
 
 #wrapper {
@@ -8,11 +9,11 @@ body {
 }
 
 header {
-    height: 100px;
     width: 100%;
     text-align: center;
     display: block;
     height: 125px;
+    background-color: #ecf0f1;
 }
 
 header a {
@@ -34,25 +35,21 @@ header h1 {
 }
 
 #post-content {
-    position: relative;
-    height: 100%;
-    background-color: #1abc9c;
+
 }
 
 .post {
-    margin: 0 auto;
-    width: 80%;
+    margin: 50px 0;
 }
 
 .post .title {
-    padding-top: 50px;
     color: #F1F1F1;
 }
 
-.tags {
+.post .tags {
     margin: 10px;
 }
 
-.date {
+.post .date {
     margin: 0 10px;
 }
