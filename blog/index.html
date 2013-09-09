@@ -10,7 +10,7 @@ css:
 </header>
 
 <div id="post-content" class="container">
-    {% for post in site.posts %}
+    {% for post in paginator.posts %}
     <div class="post" class="row">
         <div class="span12">
             <div class="title"><a href="{{ post.url }}"><h1>{{ post.title }}</h1></a></div>
@@ -28,3 +28,41 @@ css:
     </div>
     {% endfor %}
 </div>
+
+{% if paginator.total_pages > 1 %}
+<div id="post-pagination" class="pagination pagination-centered">
+    <ul>
+        {% if paginator.previous_page %}
+        <li>
+            {% if paginator.previous_page == 1 %}
+            <a href="/blog">«</a>
+            {% else %}
+            <a href="{{ paginator.previous_page_path }}">«</a>
+            {% endif %}
+        </li>
+        {% else %}
+        <li class="active"><span>«</span></li> <!-- Disabled -->
+        {% endif %}
+
+        {% if paginator.page == 1 %}
+        <li class="active"><span>1</span></li>
+        {% else %}
+        <li><a href="/blog">1</a></li>
+        {% endif %}
+
+        {% for count in (2..paginator.total_pages) %}
+        {% if count == paginator.page %}
+        <li class="active"><span>{{ count }}</span></li>
+        {% else %}
+        <li><a href="/blog/page{{ count }}">{{ count }}</a></li>
+        {% endif %}
+        {% endfor %}
+
+        {% if paginator.next_page %}
+        <li><a href="{{ paginator.next_page_path }}">»</a></li>
+        {% else %}
+        <li class="active"><span>»</span></li> <!-- Disabled -->
+        {% endif %}
+    </ul>
+</div>
+{% endif %}
