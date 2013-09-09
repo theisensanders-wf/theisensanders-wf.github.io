@@ -1,6 +1,5 @@
 ---
 layout: post
-title: Website Launch
 tags:
 - website
 - education
@@ -26,7 +25,7 @@ that it was more of a "pick one" scenario. Here is how my build process evolved 
 4. *Realized that I'm tired of the same old Bootstrap look*
 5. Found a theme I really liked and tailored it to fit what I needed.
 
-As much as I would've loved to create my own site, the time was just not there. So as I mentioned in the footer, v2.0
+As much as I would've loved to create my own theme, the time was just not there. So as I mentioned in the footer, v2.0
 is a work in progress that likely will not get enough love until after I graduate.
 
 Please leave me some comments or suggestions on the new site [here](http://theisensanders.com/#section5).

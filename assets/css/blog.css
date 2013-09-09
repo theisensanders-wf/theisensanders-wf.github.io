@@ -53,3 +53,7 @@ header h1 {
 .post .date {
     margin: 0 10px;
 }
+
+.pagination a {
+    color: #000000;
+}
