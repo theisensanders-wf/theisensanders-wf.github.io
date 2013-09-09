@@ -4,6 +4,7 @@ body {
 
 #wrapper {
     height: 100%;
+    overflow: visible;
 }
 
 header {
@@ -11,6 +12,7 @@ header {
     width: 100%;
     text-align: center;
     display: block;
+    height: 125px;
 }
 
 header a {
@@ -23,11 +25,12 @@ header a:hover {
 }
 
 header h1 {
-    font-size: 85px;
+    font-size: 75px;
     font-size: 8.5rem;
     font-weight: 500;
     letter-spacing: -2px;
     margin-right: 10px;
+    line-height: 125px;
 }
 
 #post-content {
@@ -44,4 +47,8 @@ header h1 {
 .post .title {
     padding-top: 50px;
     color: #F1F1F1;
+}
+
+.tags {
+    margin: 10px;
 }
