@@ -52,3 +52,7 @@ header h1 {
 .tags {
     margin: 10px;
 }
+
+.date {
+    margin: 0 10px;
+}
