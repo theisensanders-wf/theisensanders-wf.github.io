@@ -125,13 +125,16 @@ $(document).ready(function ($) {
     // Title Scroll
     var titles = [
         ' programmer',
+        ' student',
         'n ultimate frisbee player',
         ' python enthusiast',
         'n amateur golfer',
-        'n Iowa State student',
-        ' traveller',
+        ' Cyclone',
         ' computer science major',
-        ' web developer'
+        ' web developer',
+        'n investor',
+        ' gamer',
+        'n Iowan'
     ];
 
     var counter = 0;
