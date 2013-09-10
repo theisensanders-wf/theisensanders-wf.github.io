@@ -52,7 +52,7 @@ $(document).ready(function ($) {
 
     // Waypoints Scrolling
 
-    var links = $('.navigation').find('li');
+    var links = $('.navigation').find('.scroll-points').find('li');
     var button = $('.intro button');
     var section = $('section');
     var mywindow = $(window);
