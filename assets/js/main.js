@@ -147,7 +147,7 @@ $(document).ready(function ($) {
         if (counter == titles.length) {
             counter = 0;
         }
-    }, 4000);
+    }, 3500);
 
 
     // Contact Form
