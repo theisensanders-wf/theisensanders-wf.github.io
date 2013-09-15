@@ -124,17 +124,14 @@ $(document).ready(function ($) {
 
     // Title Scroll
     var titles = [
-        ' programmer',
-        ' student',
+        ' software developer'
         'n ultimate frisbee player',
+        ' student',
         ' python enthusiast',
         'n amateur golfer',
-        ' Cyclone',
+        ' Iowa State Cyclone',
         ' computer science major',
-        ' web developer',
         'n investor',
-        ' gamer',
-        'n Iowan'
     ];
 
     var counter = 0;
