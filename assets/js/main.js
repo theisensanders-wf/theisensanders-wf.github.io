@@ -124,7 +124,7 @@ $(document).ready(function ($) {
 
     // Title Scroll
     var titles = [
-        ' software developer'
+        ' software developer',
         'n ultimate frisbee player',
         ' student',
         ' python enthusiast',
