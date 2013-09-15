@@ -129,7 +129,7 @@ $(document).ready(function ($) {
         ' student',
         ' python enthusiast',
         'n amateur golfer',
-        ' Iowa State Cyclone',
+        'n Iowa State Cyclone',
         ' computer science major',
         'n investor',
     ];
