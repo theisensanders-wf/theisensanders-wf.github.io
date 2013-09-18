@@ -331,7 +331,7 @@ a:hover {
 /* Section 1 */
 
 #section1 {
-    background: #7f8c8d;
+    background: #1abc9c;
     -webkit-background-size: 100% auto;
     -moz-background-size: 100% auto;
     -o-background-size: 100% auto;
@@ -380,6 +380,10 @@ a:hover {
 #section2 a {
     color: black;
     text-decoration: underline;
+}
+
+#section2 p {
+    margin-bottom: 20px;
 }
 
 .toolbox-header {

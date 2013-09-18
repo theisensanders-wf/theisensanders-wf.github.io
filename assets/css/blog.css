@@ -17,12 +17,12 @@ header {
 }
 
 header a {
-    color: #000000;
+    color: #333333;
     text-decoration: none;
 }
 
 header a:hover {
-    color: #000000;
+    color: #333333;
 }
 
 header h1 {
@@ -34,26 +34,59 @@ header h1 {
     line-height: 125px;
 }
 
-#post-content {
-
-}
-
 .post {
-    margin: 50px 0;
+    margin: 60px 0 100px 0;
 }
 
-.post .title {
+.post .post-header {
+    margin-bottom: 30px;
+}
+
+.post .post-header .title {
     color: #F1F1F1;
+    margin-bottom: 20px;
 }
 
-.post .tags {
+.post .post-header .tags {
+
+}
+
+.post .post-header .date {
+
+}
+
+/* Post content */
+.post .post-content {
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28px;
+}
+
+.post .post-content p {
+    margin: 20px 0;
+}
+
+.post .post-content img {
+    max-width: 65%;
+    margin: 20px 0;
+    -moz-box-shadow: 0 0 5px 0 #333333;
+    -webkit-box-shadow: 0 0 5px 0 #333333;
+    box-shadow: 0 0 5px 0 #333333;
+}
+
+.post .post-content li {
     margin: 10px;
 }
 
-.post .date {
-    margin: 0 10px;
-}
+/* Pagination, footer */
 
 .pagination a {
-    color: #000000;
+    color: #333333;
+}
+
+footer {
+    margin: 0px 0 60px 60px;
+    font-weight: 400;
+    font-size: 28px;
 }
