@@ -36,23 +36,23 @@ header
     margin: 10px 0 100px 0
     .post-header
       margin-bottom: 30px
-      color: $secondary
       i
         margin-right: 4px
       .title
         margin-bottom: 20px
         h1
           color: $secondary
-      .tags
-        color: $secondary
-        .label
-          background-color: $secondary
+      .tags .label
+        background-color: $primary
     .post-content
       font-size: 18px
       font-weight: 300
       line-height: 28px
       a
         color: $primary
+        overflow: hidden
+        white-space: nowrap
+        text-overflow: ellipsis
         &:hover
           color: $primary-dark
       p
