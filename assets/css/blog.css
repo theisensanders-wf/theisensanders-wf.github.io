@@ -49,37 +49,35 @@ header h1 {
 /* line 37, ../_sass/blog.sass */
 .content .post .post-header {
   margin-bottom: 30px;
-  color: #3f5666;
 }
-/* line 40, ../_sass/blog.sass */
+/* line 39, ../_sass/blog.sass */
 .content .post .post-header i {
   margin-right: 4px;
 }
-/* line 42, ../_sass/blog.sass */
+/* line 41, ../_sass/blog.sass */
 .content .post .post-header .title {
   margin-bottom: 20px;
 }
-/* line 44, ../_sass/blog.sass */
+/* line 43, ../_sass/blog.sass */
 .content .post .post-header .title h1 {
   color: #3f5666;
 }
-/* line 46, ../_sass/blog.sass */
-.content .post .post-header .tags {
-  color: #3f5666;
-}
-/* line 48, ../_sass/blog.sass */
+/* line 45, ../_sass/blog.sass */
 .content .post .post-header .tags .label {
-  background-color: #3f5666;
+  background-color: #ea6045;
 }
-/* line 50, ../_sass/blog.sass */
+/* line 47, ../_sass/blog.sass */
 .content .post .post-content {
   font-size: 18px;
   font-weight: 300;
   line-height: 28px;
 }
-/* line 54, ../_sass/blog.sass */
+/* line 51, ../_sass/blog.sass */
 .content .post .post-content a {
   color: #ea6045;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 /* line 56, ../_sass/blog.sass */
 .content .post .post-content a:hover {
