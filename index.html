@@ -22,7 +22,7 @@ css:
             <li data-section="5" class="last"><i class="icon-envelope"></i> <span>Contact</span>
             </li>
         </ul>
-        <ul style="position: fixed; bottom: 20px">
+        <ul class="external-links" style="position: fixed; bottom: 20px">
             <li style="font-weight: bold; cursor: default"><span>Links</span></li>
             <li>
                 <a rel="external" href="https://dl.dropboxusercontent.com/u/32694418/resume.pdf"><i class="icon-file-text-alt"></i>
@@ -33,15 +33,12 @@ css:
             <li>
                 <a rel="external" href="http://www.linkedin.com/pub/theisen-sanders/74/534/b48/"><i class="icon-linkedin-sign"></i>
                     <span>LinkedIn</span></a></li>
-            <li>
-                <a rel="external" href="https://plus.google.com/u/0/106253697653047269442/posts"><i class="icon-google-plus-sign"></i>
-                    <span>Google+</span></a></li>
-            <li>
-                <a rel="external" href="http://stackoverflow.com/users/1816873/tsanders"><i class="icon-stackexchange"></i>
-                    <span>SO</span></a></li>
-            <li>
+            <li class="hidden-phone">
                 <a rel="external" href="https://github.com/trsanders"><i class="icon-github-sign"></i>
                     <span>Github</span></a></li>
+            <li class="hidden-phone hidden-tablet">
+                <a rel="external" href="http://stackoverflow.com/users/1816873/tsanders"><i class="icon-stackexchange"></i>
+                    <span>SO</span></a></li>
         </ul>
     </nav>
 </div>
@@ -307,7 +304,8 @@ css:
                     <div class="span6 visible-desktop">
                         <h4>Sketchophone</h4>
 
-                        <p>Desktop/mobile web app for playing "Telephone Pictionary" with your friends</p>
+                        <p>Desktop/mobile web app for playing "Telephone Pictionary" with your
+                            friends</p>
 
                         <div class="pull-right read-more">
                             <a href="#" rel="external">Repo
