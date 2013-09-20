@@ -98,13 +98,14 @@ header h1 {
 }
 /* line 69, ../_sass/blog.sass */
 .content .post .post-content img {
-  max-width: 65%;
-  margin: 20px 0;
+  display: block;
+  max-width: 70%;
+  margin: 20px auto;
   -moz-box-shadow: 0 0 5px 0 #333333;
   -webkit-box-shadow: 0 0 5px 0 #333333;
   box-shadow: 0 0 5px 0 #333333;
 }
-/* line 75, ../_sass/blog.sass */
+/* line 76, ../_sass/blog.sass */
 .content .post .post-content li {
   margin: 10px;
   -ms-word-break: break-all;
@@ -115,51 +116,51 @@ header h1 {
   hyphens: auto;
 }
 
-/* line 84, ../_sass/blog.sass */
+/* line 85, ../_sass/blog.sass */
 .pagination a {
   color: #333333;
 }
 
-/* line 87, ../_sass/blog.sass */
+/* line 88, ../_sass/blog.sass */
 footer {
   margin: 0px 0 60px 60px;
   font-weight: 400;
   font-size: 28px;
 }
-/* line 91, ../_sass/blog.sass */
+/* line 92, ../_sass/blog.sass */
 footer a {
   color: #ea6045;
 }
-/* line 93, ../_sass/blog.sass */
+/* line 94, ../_sass/blog.sass */
 footer a:hover {
   color: #e23a1a;
 }
 
 @media screen and (min-width: 768px) and (max-width: 979px) {
-  /* line 98, ../_sass/blog.sass */
+  /* line 99, ../_sass/blog.sass */
   header h1 {
     font-size: 70px;
   }
 }
 @media (max-width: 767px) {
-  /* line 102, ../_sass/blog.sass */
+  /* line 103, ../_sass/blog.sass */
   .content {
     padding: 15px;
   }
 
-  /* line 104, ../_sass/blog.sass */
+  /* line 105, ../_sass/blog.sass */
   header h1 {
     font-size: 60px;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 649px) {
-  /* line 108, ../_sass/blog.sass */
+  /* line 109, ../_sass/blog.sass */
   header h1 {
     font-size: 50px;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 112, ../_sass/blog.sass */
+  /* line 113, ../_sass/blog.sass */
   header h1 {
     font-size: 40px;
   }
