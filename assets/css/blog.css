@@ -75,19 +75,22 @@ header h1 {
 /* line 51, ../_sass/blog.sass */
 .content .post .post-content a {
   color: #ea6045;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
 }
-/* line 56, ../_sass/blog.sass */
+/* line 53, ../_sass/blog.sass */
 .content .post .post-content a:hover {
   color: #e23a1a;
 }
-/* line 58, ../_sass/blog.sass */
+/* line 61, ../_sass/blog.sass */
 .content .post .post-content p {
   margin: 20px 0;
 }
-/* line 60, ../_sass/blog.sass */
+/* line 63, ../_sass/blog.sass */
 .content .post .post-content img {
   max-width: 65%;
   margin: 20px 0;
@@ -95,56 +98,56 @@ header h1 {
   -webkit-box-shadow: 0 0 5px 0 #333333;
   box-shadow: 0 0 5px 0 #333333;
 }
-/* line 66, ../_sass/blog.sass */
+/* line 69, ../_sass/blog.sass */
 .content .post .post-content li {
   margin: 10px;
 }
 
-/* line 69, ../_sass/blog.sass */
+/* line 72, ../_sass/blog.sass */
 .pagination a {
   color: #333333;
 }
 
-/* line 72, ../_sass/blog.sass */
+/* line 75, ../_sass/blog.sass */
 footer {
   margin: 0px 0 60px 60px;
   font-weight: 400;
   font-size: 28px;
 }
-/* line 76, ../_sass/blog.sass */
+/* line 79, ../_sass/blog.sass */
 footer a {
   color: #ea6045;
 }
-/* line 78, ../_sass/blog.sass */
+/* line 81, ../_sass/blog.sass */
 footer a:hover {
   color: #e23a1a;
 }
 
 @media screen and (min-width: 768px) and (max-width: 979px) {
-  /* line 83, ../_sass/blog.sass */
+  /* line 86, ../_sass/blog.sass */
   header h1 {
     font-size: 70px;
   }
 }
 @media (max-width: 767px) {
-  /* line 87, ../_sass/blog.sass */
+  /* line 90, ../_sass/blog.sass */
   .content {
     padding: 15px;
   }
 
-  /* line 89, ../_sass/blog.sass */
+  /* line 92, ../_sass/blog.sass */
   header h1 {
     font-size: 60px;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 649px) {
-  /* line 93, ../_sass/blog.sass */
+  /* line 96, ../_sass/blog.sass */
   header h1 {
     font-size: 50px;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 97, ../_sass/blog.sass */
+  /* line 100, ../_sass/blog.sass */
   header h1 {
     font-size: 40px;
   }
