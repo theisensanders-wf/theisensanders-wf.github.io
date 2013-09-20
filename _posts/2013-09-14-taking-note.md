@@ -11,7 +11,9 @@ This semester I've started taking notes using markdown. It is quick and easy to 
 
 Thus, <del>DropNoteIt</del> <del>MarkNote</del> <del>NoteIt</del> **TakingNote** was born!
 
-<a href="https://takingnote.herokuapp.com/landing.html"><img src="http://theisensanders.com/assets/img/projects/note_app.png" alt="TakeNote"></img></a>
+<a href="https://takingnote.herokuapp.com/landing.html">
+    <img src="http://theisensanders.com/assets/img/projects/note_app.png" alt="TakeNote"></img>
+</a>
 
 **Current Features:**
 
