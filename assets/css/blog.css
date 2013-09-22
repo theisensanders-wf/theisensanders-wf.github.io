@@ -21,7 +21,7 @@ header {
   height: 125px;
   margin: 40px 0;
   white-space: nowrap;
-  background-color: #ea6045;
+  background-color: #60b9e8;
 }
 /* line 21, ../_sass/blog.sass */
 header a {
@@ -60,11 +60,11 @@ header h1 {
 }
 /* line 43, ../_sass/blog.sass */
 .content .post .post-header .title h1 {
-  color: #3f5666;
+  color: #333333;
 }
 /* line 45, ../_sass/blog.sass */
 .content .post .post-header .tags .label {
-  background-color: #ea6045;
+  background-color: #60b9e8;
 }
 /* line 47, ../_sass/blog.sass */
 .content .post .post-content {
@@ -74,7 +74,7 @@ header h1 {
 }
 /* line 51, ../_sass/blog.sass */
 .content .post .post-content a {
-  color: #ea6045;
+  color: #60b9e8;
   -ms-word-break: break-all;
   word-break: break-all;
   word-break: break-word;
@@ -84,7 +84,7 @@ header h1 {
 }
 /* line 53, ../_sass/blog.sass */
 .content .post .post-content a:hover {
-  color: #e23a1a;
+  color: #33a5e2;
 }
 /* line 61, ../_sass/blog.sass */
 .content .post .post-content p {
@@ -129,11 +129,11 @@ footer {
 }
 /* line 92, ../_sass/blog.sass */
 footer a {
-  color: #ea6045;
+  color: #60b9e8;
 }
 /* line 94, ../_sass/blog.sass */
 footer a:hover {
-  color: #e23a1a;
+  color: #33a5e2;
 }
 
 @media screen and (min-width: 768px) and (max-width: 979px) {

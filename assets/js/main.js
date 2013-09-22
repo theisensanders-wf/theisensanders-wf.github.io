@@ -71,7 +71,7 @@ $(document).ready(function ($) {
             $('.navigation li[data-section="' + newsection + '"]').addClass('active').siblings().removeClass('active');
         }
 
-    });
+    }, {offset: '50%'});
 
     mywindow.scroll(function () {
         if (mywindow.scrollTop() == 0) {
