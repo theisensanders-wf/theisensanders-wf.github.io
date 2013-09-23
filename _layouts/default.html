@@ -13,26 +13,24 @@
 
     <link rel="shortcut icon" href="/favicon.png" type="image/png">
 
-
     <link href="/assets/css/lib/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="/assets/css/lib/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
     <link href="/assets/css/lib/font-awesome.min.css" rel="stylesheet">
 
-    {% for css in page.css %}
-        <link rel="stylesheet" href="{{ css }}">
-    {% endfor %}
-
-
     <!--[if IE 7]>
     <link href="css/font-awesome-ie7.min.css" rel="stylesheet">
     <![endif]-->
+
+
+    {% for css in page.css %}
+        <link rel="stylesheet" href="{{ css }}">
+    {% endfor %}
 
     <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
     {% include google_analytics.html %}
-
 </head>
 <body>
 

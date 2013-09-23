@@ -1,3 +1,29 @@
+$(function () {
+    // Title Scroll
+    var titles = [
+        ' software developer',
+        'n ultimate frisbee player',
+        ' student',
+        ' python enthusiast',
+        'n amateur golfer',
+        'n Iowa State Cyclone',
+        ' computer science major',
+        'n investor'
+    ];
+
+    var counter = 0;
+    setInterval(function () {
+        $("#titles").fadeOut(500, function () {
+            $(this).text(titles[counter]).fadeIn(500);
+        });
+
+        counter++;
+        if (counter == titles.length) {
+            counter = 0;
+        }
+    }, 3333);
+});
+
 $(document).ready(function ($) {
 
     // Sidebar Toggle
@@ -120,32 +146,6 @@ $(document).ready(function ($) {
             return $(this).attr('src').replace('.svg', '.png');
         });
     }
-
-
-    // Title Scroll
-    var titles = [
-        ' software developer',
-        'n ultimate frisbee player',
-        ' student',
-        ' python enthusiast',
-        'n amateur golfer',
-        'n Iowa State Cyclone',
-        ' computer science major',
-        'n investor',
-    ];
-
-    var counter = 0;
-    setInterval(function () {
-        $("#titles").fadeOut(500, function () {
-            $(this).text(titles[counter]).fadeIn(500);
-        });
-
-        counter++;
-        if (counter == titles.length) {
-            counter = 0;
-        }
-    }, 3500);
-
 
     // Contact Form
     $.fn.serializeObject = function () {
