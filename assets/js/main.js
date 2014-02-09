@@ -3,12 +3,9 @@ $(function () {
     var titles = [
         ' software developer',
         'n ultimate frisbee player',
-        ' student',
-        ' python enthusiast',
+        ' website designer',
         'n amateur golfer',
-        'n Iowa State Cyclone',
-        ' computer science major',
-        'n investor'
+        'n Iowa State Cyclone'
     ];
 
     var counter = 0;
