@@ -1,9 +1,10 @@
-permalink: /blog/:categories/:title
+# Site Variables
+title: Theisen
+url: http://theisensanders.com
+thumbnail: /assets/img/theisen.png
+description: >
+    Ideas and thoughts of software developer Theisen Sanders
 
-paginate: 5
-paginate_path: "/blog/page:num"
-
-title: Theisen Sanders
-subtitle: idk
-author: Theisen Sanders
-google_analytics: UA-33670860-3
+# Build Variables
+permalink: /blog/:title
+markdown: redcarpet
