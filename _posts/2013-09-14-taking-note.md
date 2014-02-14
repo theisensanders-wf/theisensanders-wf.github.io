@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 tags:
 - web development
 - projects
