@@ -398,194 +398,101 @@ body {
 }
 
 /* line 14, ../_scss/main.scss */
-::selection {
-  background: #7ec5c9;
-}
-
-/* line 18, ../_scss/main.scss */
-::-moz-selection {
-  background: #7ec5c9;
-}
-
-/* line 22, ../_scss/main.scss */
 h1 {
   font-family: "brandon-grotesque", sans-serif;
   font-size: 40px;
   text-transform: uppercase;
-  color: #da0734;
+  color: #3d3d3d;
 }
 
-/* line 29, ../_scss/main.scss */
+/* line 21, ../_scss/main.scss */
 h2 {
   font-family: "brandon-grotesque", sans-serif;
   font-size: 28px;
   text-transform: uppercase;
-  color: #da0734;
+  color: #3d3d3d;
 }
 
-/* line 36, ../_scss/main.scss */
+/* line 28, ../_scss/main.scss */
 h3 {
   font-family: "brandon-grotesque", sans-serif;
   font-size: 22px;
   text-transform: uppercase;
 }
 
-/* line 42, ../_scss/main.scss */
+/* line 34, ../_scss/main.scss */
 h4 {
   font-family: "brandon-grotesque", sans-serif;
   font-size: 20px;
 }
 
-/* line 47, ../_scss/main.scss */
+/* line 39, ../_scss/main.scss */
 h5, h6 {
   font-family: "brandon-grotesque", sans-serif;
   font-size: 18px;
 }
 
-/* line 52, ../_scss/main.scss */
+/* line 44, ../_scss/main.scss */
 a {
   color: #4aabb1;
 }
-/* line 55, ../_scss/main.scss */
+/* line 47, ../_scss/main.scss */
 a:hover {
   text-decoration: none;
   color: #33777b;
 }
 
-/* line 61, ../_scss/main.scss */
-header {
+/* line 53, ../_scss/main.scss */
+nav.navbar {
   text-align: center;
-  height: 160px;
+  background-color: #fff;
+  padding: 20px 0;
+  border: none;
+  margin-bottom: 30px;
 }
-/* line 65, ../_scss/main.scss */
-header #separator {
-  height: 2px;
-  background-color: #da0734;
+
+/* line 61, ../_scss/main.scss */
+footer {
+  height: 80px;
+}
+
+/* line 67, ../_scss/main.scss */
+.post-list {
+  list-style: none;
 }
 /* line 70, ../_scss/main.scss */
-header nav.navbar {
-  height: 120px;
-  background-color: inherit;
-  border: none;
-  padding: 40px;
-  margin-bottom: 0;
+.post-list .post {
+  position: relative;
+  border-top: 1px solid #ebeaec;
+  padding: 15px 0;
 }
-/* line 77, ../_scss/main.scss */
-header nav.navbar a {
-  height: 40px;
-  line-height: 40px;
-  text-align: center;
-  vertical-align: middle;
-  display: inline-block;
-  color: #da0734;
+/* line 75, ../_scss/main.scss */
+.post-list .post div {
+  line-height: 100px;
+}
+/* line 78, ../_scss/main.scss */
+.post-list .post div .title {
+  font-family: "brandon-grotesque", sans-serif;
+  font-size: 28px;
   text-transform: uppercase;
-  text-shadow: 1px 1px 0 rgba(214, 214, 214, 0.4), 2px 2px 0 rgba(214, 214, 214, 0.4);
+  color: #3d3d3d;
 }
-/* line 87, ../_scss/main.scss */
-header nav.navbar a:hover {
-  color: #900522;
-}
-/* line 91, ../_scss/main.scss */
-header nav.navbar a#brand {
-  font-size: 36px;
-  margin-left: 50px;
-  margin-right: 50px;
-}
-/* line 99, ../_scss/main.scss */
-header::after {
-  content: '';
-  display: block;
-  height: 5px;
-  bottom: -4px;
-  left: 0;
-  right: 0;
-  -webkit-opacity: .15;
-  -moz-opacity: .15;
-  opacity: .15;
-  background-image: -moz-radial-gradient(50% -30%, ellipse farthest-side, black 0, rgba(0, 0, 0, 0.5) 60%, rgba(0, 0, 0, 0) 100%);
-  background-image: -webkit-radial-gradient(50% -30%, ellipse farthest-side, black 0, rgba(0, 0, 0, 0.5) 60%, rgba(0, 0, 0, 0) 100%);
-  background-image: -o-radial-gradient(50% -30%, ellipse farthest-side, black 0, rgba(0, 0, 0, 0.5) 60%, rgba(0, 0, 0, 0) 100%);
-  background-image: radial-gradient(50% -30%, ellipse farthest-side, #000000 0%, rgba(0, 0, 0, 0.5) 60%, rgba(0, 0, 0, 0) 100%);
-}
-
-/* line 116, ../_scss/main.scss */
-div#content {
-  min-height: 500px;
-  margin-bottom: 60px;
-}
-
-/* line 121, ../_scss/main.scss */
-footer {
-  min-height: 300px;
-  background-color: #3d3d3d;
-  padding: 60px 0;
-  color: #fcf3e7;
-}
-/* line 127, ../_scss/main.scss */
-footer a {
-  color: #da0734;
-}
-/* line 130, ../_scss/main.scss */
-footer a:hover {
-  color: #900522;
-}
-/* line 135, ../_scss/main.scss */
-footer ul {
-  list-style-type: none;
-}
-/* line 138, ../_scss/main.scss */
-footer ul li {
-  margin: 13px;
-}
-/* line 143, ../_scss/main.scss */
-footer p {
-  font-size: 16px;
-}
-/* line 147, ../_scss/main.scss */
-footer #footer-image {
-  text-align: center;
-  margin-bottom: 40px;
-}
-/* line 151, ../_scss/main.scss */
-footer #footer-image img {
-  border-radius: 20px;
-}
-
-/* line 158, ../_scss/main.scss */
-a.bracket-effect::before, a.bracket-effect::after {
+/* line 85, ../_scss/main.scss */
+.post-list .post div .thumb {
+  position: absolute;
+  right: 20px;
   display: inline-block;
-  opacity: 0;
-  -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
-  -moz-transition: -moz-transform 0.3s, opacity 0.2s;
-  transition: transform 0.3s, opacity 0.2s;
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  background-image: url("/assets/img/posts/logo.svg");
+  background-size: cover;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: .8;
 }
-/* line 165, ../_scss/main.scss */
-a.bracket-effect::before {
-  margin-right: 10px;
-  content: '{';
-  -webkit-transform: translateX(20px);
-  -moz-transform: translateX(20px);
-  transform: translateX(20px);
-}
-/* line 172, ../_scss/main.scss */
-a.bracket-effect::after {
-  margin-left: 10px;
-  content: '}';
-  -webkit-transform: translateX(-20px);
-  -moz-transform: translateX(-20px);
-  transform: translateX(-20px);
-}
-/* line 180, ../_scss/main.scss */
-a.bracket-effect:hover::before, a.bracket-effect:hover::after {
-  opacity: 1;
-  -webkit-transform: translateX(0px);
-  -moz-transform: translateX(0px);
-  transform: translateX(0px);
-}
-/* line 188, ../_scss/main.scss */
-a.bracket-effect:focus::before, a.bracket-effect:focus::after {
-  opacity: 1;
-  -webkit-transform: translateX(0px);
-  -moz-transform: translateX(0px);
-  transform: translateX(0px);
+/* line 103, ../_scss/main.scss */
+.post-list .post:hover .title {
+  color: #da0734;
 }
