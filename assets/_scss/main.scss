@@ -1,0 +1,158 @@
+@import "fonts";
+@import "colors";
+@import "pygments";
+@import "media";
+
+body {
+  font-family: $body-font;
+  font-size: 18px;
+  color: $gray;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1 {
+  font-family: $header-font;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: $primary;
+}
+
+h2 {
+  font-family: $header-font;
+  font-size: 28px;
+  text-transform: uppercase;
+  color: $primary;
+}
+
+h3 {
+  font-family: $header-font;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-family: $header-font;
+  font-size: 20px;
+}
+
+h5, h6 {
+  font-family: $header-font;
+  font-size: 18px;
+}
+
+a {
+  color: $blue;
+
+  &:hover {
+    text-decoration: none;
+    color: $blue-dk;
+  }
+}
+
+nav.navbar {
+  text-align: center;
+  background-color: #fff;
+  padding: 20px 0;
+  border: none;
+  margin-bottom: 30px;
+}
+
+footer {
+  margin-top: 80px;
+
+  .media-links {
+    position: absolute;
+    bottom: 0;
+    right: 80px;
+
+    .btn {
+      background-color: transparentize($gray-lt3, .3);
+      color: #000;
+      border-radius: 0;
+      padding: 15px 10px;
+
+      &:hover {
+        background-color: $gray-lt3;
+      }
+    }
+  }
+}
+
+.post-list {
+  list-style: none;
+
+  .post {
+    position: relative;
+    border-top: 1px solid #ebeaec;
+    padding: 15px 0;
+
+    div {
+      line-height: 100px;
+
+      .title {
+        font-family: $header-font;
+        font-size: 28px;
+        text-transform: uppercase;
+        color: $primary;
+      }
+
+      .thumb {
+        position: absolute;
+        right: 20px;
+        display: inline-block;
+        height: 100px;
+        width: 100px;
+        border-radius: 50px;
+
+        background-image: url('/assets/img/logo.svg');
+        background-size: cover;
+        background-color: #fff;
+        background-repeat: no-repeat;
+        background-position: center center;
+        opacity: .8;
+      }
+    }
+
+    &:hover {
+      .title {
+        color: $red;
+      }
+    }
+  }
+}
+
+.post-meta {
+  margin-bottom: 40px;
+  font-family: $header-font;
+
+  .date {
+    display: block;
+    color: $gray-lt2;
+    font-size: 16px;
+  }
+
+  .title {
+    display: block;
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  .subtitle {
+    font-size: 24px;
+  }
+
+  &:after {
+    content: " ";
+    display: block;
+    width: 40px;
+    height: 4px;
+    margin: 10px 0;
+    background: $gray-lt3;
+  }
+}
+
+nav.post-nav {
+  float: right;
+  margin-top: 40px;
+}
