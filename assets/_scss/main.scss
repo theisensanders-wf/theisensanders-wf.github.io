@@ -50,6 +50,15 @@ a {
   }
 }
 
+table {
+  margin-top: 20px;
+  margin-bottom: 30px;
+
+  th, td {
+    padding-right: 40px;
+  }
+}
+
 nav.navbar {
   text-align: center;
   background-color: #fff;
@@ -152,7 +161,7 @@ footer {
   }
 }
 
-nav.post-nav {
+.post-nav {
   float: right;
   margin-top: 40px;
 }

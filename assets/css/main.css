@@ -427,6 +427,16 @@ a:hover {
 }
 
 /* line 53, ../_scss/main.scss */
+table {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+/* line 57, ../_scss/main.scss */
+table th, table td {
+  padding-right: 40px;
+}
+
+/* line 62, ../_scss/main.scss */
 nav.navbar {
   text-align: center;
   background-color: #fff;
@@ -435,50 +445,50 @@ nav.navbar {
   margin-bottom: 30px;
 }
 
-/* line 61, ../_scss/main.scss */
+/* line 70, ../_scss/main.scss */
 footer {
   margin-top: 80px;
 }
-/* line 64, ../_scss/main.scss */
+/* line 73, ../_scss/main.scss */
 footer .media-links {
   position: absolute;
   bottom: 0;
   right: 80px;
 }
-/* line 69, ../_scss/main.scss */
+/* line 78, ../_scss/main.scss */
 footer .media-links .btn {
   background-color: rgba(176, 176, 176, 0.7);
   color: #000;
   border-radius: 0;
   padding: 15px 10px;
 }
-/* line 75, ../_scss/main.scss */
+/* line 84, ../_scss/main.scss */
 footer .media-links .btn:hover {
   background-color: #b0b0b0;
 }
 
-/* line 82, ../_scss/main.scss */
+/* line 91, ../_scss/main.scss */
 .post-list {
   list-style: none;
 }
-/* line 85, ../_scss/main.scss */
+/* line 94, ../_scss/main.scss */
 .post-list .post {
   position: relative;
   border-top: 1px solid #ebeaec;
   padding: 15px 0;
 }
-/* line 90, ../_scss/main.scss */
+/* line 99, ../_scss/main.scss */
 .post-list .post div {
   line-height: 100px;
 }
-/* line 93, ../_scss/main.scss */
+/* line 102, ../_scss/main.scss */
 .post-list .post div .title {
   font-family: "brandon-grotesque", sans-serif;
   font-size: 28px;
   text-transform: uppercase;
   color: #3d3d3d;
 }
-/* line 100, ../_scss/main.scss */
+/* line 109, ../_scss/main.scss */
 .post-list .post div .thumb {
   position: absolute;
   right: 20px;
@@ -493,33 +503,33 @@ footer .media-links .btn:hover {
   background-position: center center;
   opacity: .8;
 }
-/* line 118, ../_scss/main.scss */
+/* line 127, ../_scss/main.scss */
 .post-list .post:hover .title {
   color: #da0734;
 }
 
-/* line 125, ../_scss/main.scss */
+/* line 134, ../_scss/main.scss */
 .post-meta {
   margin-bottom: 40px;
   font-family: "brandon-grotesque", sans-serif;
 }
-/* line 129, ../_scss/main.scss */
+/* line 138, ../_scss/main.scss */
 .post-meta .date {
   display: block;
   color: #8a8a8a;
   font-size: 16px;
 }
-/* line 135, ../_scss/main.scss */
+/* line 144, ../_scss/main.scss */
 .post-meta .title {
   display: block;
   font-size: 40px;
   font-weight: bold;
 }
-/* line 141, ../_scss/main.scss */
+/* line 150, ../_scss/main.scss */
 .post-meta .subtitle {
   font-size: 24px;
 }
-/* line 145, ../_scss/main.scss */
+/* line 154, ../_scss/main.scss */
 .post-meta:after {
   content: " ";
   display: block;
@@ -529,8 +539,8 @@ footer .media-links .btn:hover {
   background: #b0b0b0;
 }
 
-/* line 155, ../_scss/main.scss */
-nav.post-nav {
+/* line 164, ../_scss/main.scss */
+.post-nav {
   float: right;
   margin-top: 40px;
 }
