@@ -1,0 +1,29 @@
+- name: Twitter
+  url: https://twitter.com/theisensanders
+  show: false
+
+- name: Facebook
+  url: http://facebook.com/theisensanders
+  show: false
+
+- name: Resume
+  icon: paperclip
+  url: https://dl.dropboxusercontent.com/u/32694418/resume.pdf
+  show: true
+
+- name: LinkedIn
+  url: http://www.linkedin.com/pub/theisen-sanders/74/534/b48/
+  show: false
+
+- name: Github
+  url: https://github.com/trsanders
+  show: false
+
+- name: StackOverflow
+  url: http://stackoverflow.com/users/1816873/tsanders
+  show: false
+
+- name: Email
+  icon: envelope
+  url: mailto:me@theisensanders.com
+  show: true

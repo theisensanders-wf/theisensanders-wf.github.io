@@ -1,39 +1,21 @@
 ---
 layout: default
-css:
-- /assets/css/styles.css
-- /assets/css/blog.css
 ---
 
-<header>
-    <a href="/"><h1>Theisen Sanders</h1></a>
-</header>
-
-<div class="container content">
-    <div class="post row">
-        <div class="span12">
-            <div class="post-header">
-                <div class="title"><h1>{{ page.title }}</h1></div>
-                <div class="date"><h4><i class="icon-time"></i> {{ page.date | date: "%b %d, %Y" }}
-                </h4>
-
-                    <div class="tags">
-                        <h4><i class="icon-tags"></i>
-                            {% for tag in page.tags %}
-                            <span class="label label-inverse">{{ tag }}</span>
-                            {% endfor %}
-                        </h4>
-                    </div>
-                </div>
-            </div>
-            <div class="post-content">
-                {{ content }}
-            </div>
-        </div>
-    </div>
+<div class="post-meta">
+    <span class="date">{{ page.date | date_to_string }}</span>
+    <span class="title">{{ page.title }}</span>
+    {% if page.subtitle %}<span class="subtitle">{{ page.subtitle }}</span>{% endif %}
 </div>
 
+{{ content }}
 
-<footer>
-    <a href="/blog"><i class="icon-double-angle-left "></i> Return to blog</a>
-</footer>
+<nav class="post-nav">
+{% if page.previous %}
+<a class="btn btn-default" href="{{ page.previous.url }}"><strong>Previous Post:</strong> {{ page.previous.title }}</a>
+{% endif %}
+
+{% if page.next %}
+<a class="btn btn-default" href="{{ page.next.url }}"><strong>Next Post:</strong> {{ page.next.title }}</a>
+{% endif %}
+<nav>
