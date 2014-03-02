@@ -7,7 +7,7 @@ layout: default
     <li class="post">
         <a href="{{ post.url }}">
                 <div>
-                    <span class="title">{{ post.title }}</span>
+                    <span class="title">{{ post.title }}{% if post.subtitle %}: {{ post.subtitle }}{% endif %}</span>
                     <span class="thumb" {% if post.img %}style="background-image: url('/assets/img/posts/{{ post.img }}');"{% endif %}></span>
                 </div>
         </a>

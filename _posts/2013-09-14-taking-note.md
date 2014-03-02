@@ -1,5 +1,7 @@
 ---
-layout: default
+layout: post
+subtitle: A Markdown-Powered Text Editor
+img: taking-note.png
 tags:
 - web development
 - projects

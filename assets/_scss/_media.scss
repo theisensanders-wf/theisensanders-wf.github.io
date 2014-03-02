@@ -5,21 +5,3 @@ $screen-lg-min: 1200px;
 $screen-xs-max: ($screen-sm-min - 1);
 $screen-sm-max: ($screen-md-min - 1);
 $screen-md-max: ($screen-lg-min - 1);
-
-@media (max-width: $screen-xs-max) {
-    header {
-        a:not(#brand) {
-            display: none;
-        }
-    }
-}
-
-@media (max-width: $screen-sm-max) {
-    footer {
-        text-align: center;
-
-        ul {
-            display: none;
-        }
-    }
-}
