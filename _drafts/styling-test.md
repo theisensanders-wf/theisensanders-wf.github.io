@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 ---
 
 An h1 header

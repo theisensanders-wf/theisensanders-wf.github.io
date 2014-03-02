@@ -59,10 +59,25 @@ nav.navbar {
 }
 
 footer {
-  height: 80px;
+  margin-top: 80px;
+
+  .media-links {
+    position: absolute;
+    bottom: 0;
+    right: 80px;
+
+    .btn {
+      background-color: transparentize($gray-lt3, .3);
+      color: #000;
+      border-radius: 0;
+      padding: 15px 10px;
+
+      &:hover {
+        background-color: $gray-lt3;
+      }
+    }
+  }
 }
-
-
 
 .post-list {
   list-style: none;
@@ -90,7 +105,7 @@ footer {
         width: 100px;
         border-radius: 50px;
 
-        // background-image: url('/assets/img/posts/logo.svg');
+        background-image: url('/assets/img/logo.svg');
         background-size: cover;
         background-color: #fff;
         background-repeat: no-repeat;
@@ -105,4 +120,39 @@ footer {
       }
     }
   }
+}
+
+.post-meta {
+  margin-bottom: 40px;
+  font-family: $header-font;
+
+  .date {
+    display: block;
+    color: $gray-lt2;
+    font-size: 16px;
+  }
+
+  .title {
+    display: block;
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  .subtitle {
+    font-size: 24px;
+  }
+
+  &:after {
+    content: " ";
+    display: block;
+    width: 40px;
+    height: 4px;
+    margin: 10px 0;
+    background: $gray-lt3;
+  }
+}
+
+nav.post-nav {
+  float: right;
+  margin-top: 40px;
 }
