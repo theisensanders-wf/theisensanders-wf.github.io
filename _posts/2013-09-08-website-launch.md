@@ -1,11 +1,12 @@
 ---
 layout: post
+excerpt: Website launch in 3.. 2.. 1..
 tags:
 - website
 - education
 ---
 
-*Edit:* This references the first version of my website. Read about the latest version soon!
+*Edit:* This post references the first version of my website. Read about the latest version in a blog post coming soon!
 
 A partially implemented version of my personal website has been sitting in a github repo untouched for over a year.
 Now that it is time to graduate and figure out what comes next, I decided it was finally time to scrap all

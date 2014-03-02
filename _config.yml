@@ -8,3 +8,6 @@ description: >
 # Build Variables
 permalink: /blog/:title
 markdown: redcarpet
+
+redcarpet:
+  extensions: [tables, strikethrough]
