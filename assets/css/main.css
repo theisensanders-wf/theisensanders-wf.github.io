@@ -372,6 +372,21 @@
 }
 
 /* Literal.Number.Integer.Long */
+/* Small to Medium Devices */
+@media (max-width: 992px) {
+  /* line 13, ../_scss/_media.scss */
+  .post-list .post div {
+    line-height: 20px !important;
+  }
+  /* line 16, ../_scss/_media.scss */
+  .post-list .post div .title {
+    font-size: 20px !important;
+  }
+  /* line 20, ../_scss/_media.scss */
+  .post-list .post div .thumb {
+    display: none !important;
+  }
+}
 /* line 6, ../_scss/main.scss */
 body {
   font-family: "jubilat", sans-serif;
