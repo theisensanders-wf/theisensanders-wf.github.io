@@ -5,7 +5,7 @@ tags:
 - theisensanders.com
 ---
 
-*Edit:* This post references the first version of my website. Read about the latest version [here](/blog/portfolio-take-%232/)
+*Edit:* This post references the first version of my website. Read about the latest version [here](/blog/portfolio-take-2/)
 
 A partially implemented version of my personal website has been sitting in a github repo untouched for over a year.
 Now that it is time to graduate and figure out what comes next, I decided it was finally time to scrap all
