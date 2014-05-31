@@ -1,8 +1,38 @@
-@import "colors";
+@import "mixins/_colors";
+@import "mixins/_typography";
 
-// Mixins
-@import "mixins/buttons";
+header {
+    padding-top: 30px;
+    padding-bottom: 30px;
 
-body {
-  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    .logo {
+        margin: 0;
+
+        a {
+            color: $gray-lt3;
+            text-decoration: none;
+            letter-spacing: 1px;
+            word-spacing: -5px;
+
+        .lastname {
+            color: #4A90E2;
+        }
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+    .btn {
+        margin-top: 8px;
+        font-size: 16px;
+    }
+}
+
+
+.message {
+    margin-top: 200px;
+    text-align: center;
+    font-weight: bold;
 }
