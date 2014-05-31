@@ -12,33 +12,34 @@ h1, h2, h3, h4, h5, h6 {
 header {
   padding-top: 30px;
   padding-bottom: 30px;
+  text-align: center;
 }
-/* line 8, ../_scss/main.scss */
+/* line 9, ../_scss/main.scss */
 header .logo {
   margin: 0;
 }
-/* line 11, ../_scss/main.scss */
+/* line 12, ../_scss/main.scss */
 header .logo a {
   color: #b0b0b0;
   text-decoration: none;
   letter-spacing: 1px;
   word-spacing: -5px;
 }
-/* line 17, ../_scss/main.scss */
+/* line 18, ../_scss/main.scss */
 header .logo a .lastname {
   color: #4A90E2;
 }
-/* line 21, ../_scss/main.scss */
+/* line 22, ../_scss/main.scss */
 header .logo a:hover {
   text-decoration: none;
 }
-/* line 27, ../_scss/main.scss */
+/* line 28, ../_scss/main.scss */
 header .btn {
   margin-top: 8px;
   font-size: 16px;
 }
 
-/* line 34, ../_scss/main.scss */
+/* line 35, ../_scss/main.scss */
 .message {
   margin-top: 200px;
   text-align: center;
