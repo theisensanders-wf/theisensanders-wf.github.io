@@ -3,54 +3,37 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-<head>
+    <head>
+        {% include meta.html %}
 
-    {% include meta.html %}
+        <link rel="stylesheet" href="assets/css/normalize.min.css">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/main.css">
 
-    <script type="text/javascript" src="//use.typekit.net/sgy6ihx.js"></script>
-    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+        <script src="assets/js/vendor/modernizr.min.js"></script>
 
-    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/assets/css/main.css">
+        <script type="text/javascript" src="//use.typekit.net/sgy6ihx.js"></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
 
-    <script src="/assets/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-</head>
-<body>
+        <header>
+            {% include header.html %}
+        </header>
 
-<!--[if lt IE 7]>
-    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-    <![endif]-->
+        <div id="content" class="container-fluid">
+            {{ content }}
+        </div>
 
-    <header>
-        <nav class="navbar navbar-default navbar" role="navigation">
-            <a href="/" id="brand"><img src="/assets/img/signature.svg"></a>
-        </nav>
-    </header>
+        <footer>
+        </footer>
 
-    <div id="content" class="container">
-        {{ content }}
-    </div> 
+        <script src="assets/js/main.js"></script>
 
-    <footer>
-        {% comment %}
-            <div class="media-links">
-                {% for link in site.data.links %}
-                {% if link.show %}
-                <a href="{{ link.url }}" class="btn btn-link btn-lg">
-                  <span class="glyphicon glyphicon-{{ link.icon }}"></span>
-                </a>
-                {% endif %}
-                {% endfor %}
-            </div>
-        {% endcomment %}
-    </footer>
-
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
-
-    <script src="/assets/js/vendor/bootstrap.min.js"></script>
-    <script src="/assets/js/main.js"></script>
-
-    {% include analytics.html %}
-</body>
+        {% include analytics.html %}
+    </body>
 </html>
+
