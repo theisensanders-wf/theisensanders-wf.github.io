@@ -1,0 +1,15 @@
+.jumbotron {
+    padding-top: 40px;
+    text-align: center;
+
+    p {
+        font-size: 40px;
+        color: $primary;
+        line-height: 60px;
+    }
+
+    img {
+        margin-top: 20px;
+        width: 800px;
+    }
+}

@@ -90,53 +90,54 @@ html, body {
   min-height: 100px;
 }
 
-/* line 19, ../_scss/main.scss */
+/* line 1, ../_scss/_index.scss */
 .jumbotron {
   padding-top: 40px;
   text-align: center;
 }
-/* line 23, ../_scss/main.scss */
+/* line 5, ../_scss/_index.scss */
 .jumbotron p {
   font-size: 40px;
   color: #4a90e2;
   line-height: 60px;
 }
-/* line 29, ../_scss/main.scss */
+/* line 11, ../_scss/_index.scss */
 .jumbotron img {
-  margin-top: 60px;
+  margin-top: 20px;
+  width: 800px;
 }
 
-/* line 34, ../_scss/main.scss */
+/* line 1, ../_scss/_playground.scss */
 #experiments {
   margin-top: 50px;
 }
-/* line 37, ../_scss/main.scss */
+/* line 4, ../_scss/_playground.scss */
 #experiments .experiment-container {
   padding: 25px 0;
 }
 @media (min-width: 768px) {
-  /* line 37, ../_scss/main.scss */
+  /* line 4, ../_scss/_playground.scss */
   #experiments .experiment-container {
     padding: 25px 30px;
   }
 }
-/* line 44, ../_scss/main.scss */
+/* line 11, ../_scss/_playground.scss */
 #experiments .experiment-container .experiment {
   height: 200px;
   min-width: 300px;
   padding: 30px;
 }
 @media (min-width: 768px) {
-  /* line 44, ../_scss/main.scss */
+  /* line 11, ../_scss/_playground.scss */
   #experiments .experiment-container .experiment {
     box-shadow: 0px 1px 5px #b0b0b0;
   }
 }
-/* line 53, ../_scss/main.scss */
+/* line 20, ../_scss/_playground.scss */
 #experiments .experiment-container .experiment .experiment-title {
   margin: 0 0 14px 0;
 }
-/* line 57, ../_scss/main.scss */
+/* line 24, ../_scss/_playground.scss */
 #experiments .experiment-container .experiment .experiment-logo {
   width: 100px;
   height: 100px;
@@ -144,16 +145,16 @@ html, body {
   margin-right: 15px;
   box-shadow: 0px 1px 5px #b0b0b0;
 }
-/* line 65, ../_scss/main.scss */
+/* line 32, ../_scss/_playground.scss */
 #experiments .experiment-container .experiment .experiment-body {
   height: 100px;
 }
-/* line 68, ../_scss/main.scss */
+/* line 35, ../_scss/_playground.scss */
 #experiments .experiment-container .experiment .experiment-body .experiment-date {
   color: #b0b0b0;
   margin: 0 0 3px 0;
 }
-/* line 73, ../_scss/main.scss */
+/* line 40, ../_scss/_playground.scss */
 #experiments .experiment-container .experiment .experiment-body .experiment-description {
   margin: 0;
 }
