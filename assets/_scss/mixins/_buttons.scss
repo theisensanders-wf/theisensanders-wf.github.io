@@ -1,0 +1,17 @@
+.btn {
+    &.btn-primary {
+        background-color: $primary;
+        border-color: $primary;
+        color: $white;
+
+        &.btn-invert {
+            background-color: $white;
+            color: $primary;
+
+            &:hover {
+                background-color: $primary;
+                color: $white;
+            }
+        }
+    }
+}
