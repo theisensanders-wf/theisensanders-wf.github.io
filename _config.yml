@@ -4,10 +4,10 @@ short_title: Theisen
 url: http://theisensanders.com
 thumbnail: /assets/img/theisen.png
 description: >
-    Ideas and thoughts of software developer Theisen Sanders
+    A web development and design playground for software developer Theisen Sanders
 
 # Build Variables
-permalink: /blog/:title
+permalink: /playground/:title
 markdown: redcarpet
 
 redcarpet:
