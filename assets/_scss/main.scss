@@ -1,3 +1,5 @@
+@import "mixins/_variables";
+
 @import "mixins/_colors";
 @import "mixins/_typography";
 
@@ -5,8 +7,12 @@
 @import "mixins/_header";
 
 
+html, body {
+    height: 100%;
+}
+
 #footer {
-    height: 100px;
+    min-height: 100px;
 }
 
 
@@ -28,34 +34,45 @@
 #experiments {
     margin-top: 50px;
 
-    .experiment {
-        height: 200px;
-        margin-top: 50px;
-        padding: 30px;
-        box-shadow: 0px 1px 5px $gray;
+    .experiment-container {
+        padding: 25px 0;
 
-        .experiment-title {
-            margin: 0 0 14px 0;
+        @media(min-width: $screen-sm-min) {
+            padding: 25px 30px;
         }
 
-        .experiment-logo {
-            width: 100px;
-            height: 100px;
-            float: left;
-            margin-right: 15px;
-            box-shadow: 0px 1px 5px $gray;
-        }
+        .experiment {
+            height: 200px;
+            min-width: 300px;
+            padding: 30px;
 
-        .experiment-body {
-            height: 100px;
-
-            .experiment-date {
-                color: $gray;
-                margin: 0 0 3px 0;
+            @media(min-width: $screen-sm-min) {
+                box-shadow: 0px 1px 5px $gray;
             }
 
-            .experiment-description {
-                margin: 0;
+            .experiment-title {
+                margin: 0 0 14px 0;
+            }
+
+            .experiment-logo {
+                width: 100px;
+                height: 100px;
+                float: left;
+                margin-right: 15px;
+                box-shadow: 0px 1px 5px $gray;
+            }
+
+            .experiment-body {
+                height: 100px;
+
+                .experiment-date {
+                    color: $gray;
+                    margin: 0 0 3px 0;
+                }
+
+                .experiment-description {
+                    margin: 0;
+                }
             }
         }
     }

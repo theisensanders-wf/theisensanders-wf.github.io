@@ -5,34 +5,38 @@ $padding: ($height - $logo-height) / 2;
 #header {
     height: $height;
     padding-top: $padding;
-    text-align: center;
-    // box-shadow: 0px 1px 5px $gray;
     
-    .logo {
-        margin: 0;
+    .header-left {
+        .logo {
+            margin: 0;
 
-        img {
-            height: $logo-height;
-        }
-
-        a {
-            color: $gray;
-            text-decoration: none;
-            letter-spacing: 1px;
-            word-spacing: -8px;
-
-            .lastname {
-                color: $primary;
+            img {
+                height: $logo-height;
             }
 
-            &:hover {
+            a {
+                color: $gray;
                 text-decoration: none;
+                letter-spacing: 1px;
+                word-spacing: -8px;
+
+                .lastname {
+                    color: $primary;
+                }
+
+                &:hover {
+                    text-decoration: none;
+                }
             }
         }
     }
 
-    .btn.btn-lg {
-        font-family: $header-font;
-        margin-top: ($logo-height - 45px) / 2;
+    .header-right {
+        text-align: right;
+
+        .btn.btn-lg {
+            font-family: $header-font;
+            margin-top: ($logo-height - 45px) / 2;
+        }
     }
 }
