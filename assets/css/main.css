@@ -1,12 +1,28 @@
 /* line 4, ../_scss/mixins/_typography.scss */
 body {
   font-family: "museo-slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
 }
 
-/* line 8, ../_scss/mixins/_typography.scss */
+/* line 9, ../_scss/mixins/_typography.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #b0b0b0;
+}
+
+/* line 14, ../_scss/mixins/_typography.scss */
+a {
+  text-decoration: none;
+}
+/* line 17, ../_scss/mixins/_typography.scss */
+a.link-underline {
+  border-bottom: 1px dashed #4a90e2;
+}
+/* line 21, ../_scss/mixins/_typography.scss */
+a:hover {
+  text-decoration: none;
+  color: #1b5dab;
+  border-bottom-color: #1b5dab;
 }
 
 /* line 2, ../_scss/mixins/_buttons.scss */
@@ -62,17 +78,59 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* line 8, ../_scss/main.scss */
+#footer {
+  height: 100px;
+}
+
+/* line 13, ../_scss/main.scss */
 .jumbotron {
   padding-top: 40px;
   text-align: center;
 }
-/* line 12, ../_scss/main.scss */
+/* line 17, ../_scss/main.scss */
 .jumbotron p {
   font-size: 40px;
   color: #4a90e2;
   line-height: 60px;
 }
-/* line 18, ../_scss/main.scss */
+/* line 23, ../_scss/main.scss */
 .jumbotron img {
   margin-top: 60px;
+}
+
+/* line 28, ../_scss/main.scss */
+#experiments {
+  margin-top: 50px;
+}
+/* line 31, ../_scss/main.scss */
+#experiments .experiment {
+  height: 200px;
+  margin-top: 50px;
+  padding: 30px;
+  box-shadow: 0px 1px 5px #b0b0b0;
+}
+/* line 37, ../_scss/main.scss */
+#experiments .experiment .experiment-title {
+  margin: 0 0 14px 0;
+}
+/* line 41, ../_scss/main.scss */
+#experiments .experiment .experiment-logo {
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin-right: 15px;
+  box-shadow: 0px 1px 5px #b0b0b0;
+}
+/* line 49, ../_scss/main.scss */
+#experiments .experiment .experiment-body {
+  height: 100px;
+}
+/* line 52, ../_scss/main.scss */
+#experiments .experiment .experiment-body .experiment-date {
+  color: #b0b0b0;
+  margin: 0 0 3px 0;
+}
+/* line 57, ../_scss/main.scss */
+#experiments .experiment .experiment-body .experiment-description {
+  margin: 0;
 }

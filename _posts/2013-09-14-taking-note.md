@@ -1,26 +1,8 @@
 ---
-layout: post
-subtitle: A Markdown-Powered Text Editor
-img: taking-note.png
-except: Taking notes in class is now a little less tedious
-tags:
-- web development
-- projects
-- angularjs
-- dropbox
+link:   https://takingnote.herokuapp.com/landing.html
+github: https://github.com/trsanders/takingnote
+image:  /assets/img/experiments/taking-note.png
 ---
 
-This semester I've started taking notes using markdown. It is quick and easy to outline, write code snippets, and format text. But I was struggling to find a descent enough application to convert the markdown plain text into html as I type.
-
-**Current Features:**
-
-- Powered by [Dropbox Datastore API](https://www.dropbox.com/developers/datastore) (*If you've never used this awesome service by Dropbox, give it a try!*)
-- Built on AngularJS framework
-- Create/Delete/Edit notes in plaintext, automatically compiled to markdown
-- Much improved UI from original prototypes
-- Collapsible sidebar for easy access to notes
-- Quickly and easily upload a file to your Dropbox and the link will automatically be inserted into to your document.
-
-The open-source project is available on [github](https://github.com/trsanders/takingnote).
-
-[Go to Taking Note](https://takingnote.herokuapp.com/landing.html)
+A online note-taking app that allows quick organization of notes and supports
+markdown flavored text.

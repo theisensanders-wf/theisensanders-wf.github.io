@@ -5,6 +5,11 @@
 @import "mixins/_header";
 
 
+#footer {
+    height: 100px;
+}
+
+
 .jumbotron {
     padding-top: 40px;
     text-align: center;
@@ -19,3 +24,40 @@
         margin-top: 60px;
     }
 }
+
+#experiments {
+    margin-top: 50px;
+
+    .experiment {
+        height: 200px;
+        margin-top: 50px;
+        padding: 30px;
+        box-shadow: 0px 1px 5px $gray;
+
+        .experiment-title {
+            margin: 0 0 14px 0;
+        }
+
+        .experiment-logo {
+            width: 100px;
+            height: 100px;
+            float: left;
+            margin-right: 15px;
+            box-shadow: 0px 1px 5px $gray;
+        }
+
+        .experiment-body {
+            height: 100px;
+
+            .experiment-date {
+                color: $gray;
+                margin: 0 0 3px 0;
+            }
+
+            .experiment-description {
+                margin: 0;
+            }
+        }
+    }
+}
+

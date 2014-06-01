@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<div id="experiments" class="col-md-12">
+    <div class="row">
+        <div class="col-md-12">
+            <p class="lead text-center">Here are some of my experiments in web development and design.</p>
+        </div>
+    </div>
+
+    {% for post in site.posts %}
+        {% assign mod = forloop.index | modulo:2 %}
+        {% if mod == 1 %}<div class="row"><div class="col-md-8 col-md-offset-2">{% endif %}
+
+        <div class="experiment col-md-5{% if mod == 0 %} col-md-offset-1{% endif %}">
+            <h3 class="experiment-title">
+                {% if post.link != null %}<a href="{{ post.link }}">{{ post.title }}</a>
+                {% else %}{{ post.title }} {% if post.eta %}[Coming Soon]{% endif %}{% endif %}
+            </h3>
+            {% if post.link != null %}<a href="{{ post.link }}">{% endif %}
+            <img class="experiment-logo" src="{{ post.image }}">
+            {% if post.link != null %}</a>{% endif %}
+            <div class="experiment-body">
+                <p class="experiment-date">{{ post.date | date:"%B %Y" }}</p>
+                <p class="experiment-description">{{ post.excerpt }}</p>
+            </div>
+        </div>
+
+        {% if mod == 0 %}</div></div>{% endif %}
+    {% endfor %}
+</div>

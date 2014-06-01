@@ -3,10 +3,25 @@ $header-font: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 body {
     font-family: $body-font;
+    color: transparentize($black, 0.2);
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: $header-font;
     color: $gray;
+}
+
+a {
+    text-decoration: none;
+
+    &.link-underline {
+        border-bottom: 1px dashed $primary;
+    }
+
+    &:hover {
+        text-decoration: none;
+        color: darken($primary, 20%);
+        border-bottom-color: darken($primary, 20%);
+    }
 }
 
