@@ -1,8 +1,12 @@
+$body-font: "museo-slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$header-font: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
 body {
-  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: $body-font;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: $primary;
+    font-family: $header-font;
+    color: $gray;
 }
 

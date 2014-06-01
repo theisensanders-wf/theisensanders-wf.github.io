@@ -1,39 +1,21 @@
 @import "mixins/_colors";
 @import "mixins/_typography";
 
-header {
-    padding-top: 30px;
-    padding-bottom: 30px;
+@import "mixins/_buttons";
+@import "mixins/_header";
+
+
+.jumbotron {
+    padding-top: 40px;
     text-align: center;
 
-    .logo {
-        margin: 0;
-
-        a {
-            color: $gray-lt3;
-            text-decoration: none;
-            letter-spacing: 1px;
-            word-spacing: -5px;
-
-        .lastname {
-            color: #4A90E2;
-        }
-
-        &:hover {
-            text-decoration: none;
-        }
+    p {
+        font-size: 40px;
+        color: $primary;
+        line-height: 60px;
     }
-}
 
-    .btn {
-        margin-top: 8px;
-        font-size: 16px;
+    img {
+        margin-top: 60px;
     }
-}
-
-
-.message {
-    margin-top: 200px;
-    text-align: center;
-    font-weight: bold;
 }

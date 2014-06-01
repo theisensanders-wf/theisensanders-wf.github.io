@@ -1,47 +1,78 @@
-/* line 1, ../_scss/mixins/_typography.scss */
+/* line 4, ../_scss/mixins/_typography.scss */
 body {
-  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "museo-slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-/* line 5, ../_scss/mixins/_typography.scss */
+/* line 8, ../_scss/mixins/_typography.scss */
 h1, h2, h3, h4, h5, h6 {
+  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #b0b0b0;
+}
+
+/* line 2, ../_scss/mixins/_buttons.scss */
+.btn.btn-primary {
+  background-color: #4a90e2;
+  border-color: #4a90e2;
+  color: white;
+}
+/* line 7, ../_scss/mixins/_buttons.scss */
+.btn.btn-primary.btn-invert {
+  background-color: white;
   color: #4a90e2;
 }
+/* line 11, ../_scss/mixins/_buttons.scss */
+.btn.btn-primary.btn-invert:hover {
+  background-color: #4a90e2;
+  color: white;
+}
 
-/* line 4, ../_scss/main.scss */
-header {
-  padding-top: 30px;
-  padding-bottom: 30px;
+/* line 5, ../_scss/mixins/_header.scss */
+#header {
+  height: 90px;
+  padding-top: 20px;
   text-align: center;
 }
-/* line 9, ../_scss/main.scss */
-header .logo {
+/* line 11, ../_scss/mixins/_header.scss */
+#header .logo {
   margin: 0;
 }
-/* line 12, ../_scss/main.scss */
-header .logo a {
+/* line 14, ../_scss/mixins/_header.scss */
+#header .logo img {
+  height: 50px;
+}
+/* line 18, ../_scss/mixins/_header.scss */
+#header .logo a {
   color: #b0b0b0;
   text-decoration: none;
   letter-spacing: 1px;
-  word-spacing: -5px;
+  word-spacing: -8px;
 }
-/* line 18, ../_scss/main.scss */
-header .logo a .lastname {
-  color: #4A90E2;
+/* line 24, ../_scss/mixins/_header.scss */
+#header .logo a .lastname {
+  color: #4a90e2;
 }
-/* line 22, ../_scss/main.scss */
-header .logo a:hover {
+/* line 28, ../_scss/mixins/_header.scss */
+#header .logo a:hover {
   text-decoration: none;
 }
-/* line 28, ../_scss/main.scss */
-header .btn {
-  margin-top: 8px;
-  font-size: 16px;
+/* line 34, ../_scss/mixins/_header.scss */
+#header .btn.btn-lg {
+  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-top: 2.5px;
 }
 
-/* line 35, ../_scss/main.scss */
-.message {
-  margin-top: 200px;
+/* line 8, ../_scss/main.scss */
+.jumbotron {
+  padding-top: 40px;
   text-align: center;
-  font-weight: bold;
+}
+/* line 12, ../_scss/main.scss */
+.jumbotron p {
+  font-size: 40px;
+  color: #4a90e2;
+  line-height: 60px;
+}
+/* line 18, ../_scss/main.scss */
+.jumbotron img {
+  margin-top: 60px;
 }

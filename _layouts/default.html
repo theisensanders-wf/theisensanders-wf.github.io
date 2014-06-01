@@ -20,16 +20,19 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <header>
-            {% include header.html %}
-        </header>
+        <div class="container-fluid">
+        
+            <div class="row" id="header">
+                {% include header.html %}
+            </div>
 
-        <div id="content" class="container-fluid">
-            {{ content }}
+            <div class="row" id="content">
+                {{ content }}
+            </div>
+
+            <!-- <div class="row" id="footer"></div> -->
+
         </div>
-
-        <footer>
-        </footer>
 
         <script src="assets/js/main.js"></script>
 
