@@ -125,7 +125,8 @@ html, body {
 /* line 11, ../_scss/_index.scss */
 .jumbotron img {
   margin-top: 20px;
-  width: 800px;
+  width: 100%;
+  max-width: 800px;
 }
 
 /* line 1, ../_scss/_playground.scss */
