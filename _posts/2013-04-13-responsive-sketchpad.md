@@ -1,4 +1,6 @@
 ---
+layout: experiment
+
 image:  /assets/img/experiments/responsive-sketchpad.png
 links:
     app:    http://trsanders.github.io/responsive-sketchpad/

@@ -1,4 +1,6 @@
 ---
+layout: experiment
+
 image:  /assets/img/experiments/taking-note.png
 links:
     app:    https://takingnote.herokuapp.com/landing.html

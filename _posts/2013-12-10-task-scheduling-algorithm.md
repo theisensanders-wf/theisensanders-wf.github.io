@@ -1,4 +1,6 @@
 ---
+layout: experiment
+
 image:  /assets/img/experiments/task-scheduling.png
 links:
     app:    http://genetic-algorithm.herokuapp.com/

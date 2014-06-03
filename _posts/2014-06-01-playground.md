@@ -1,4 +1,6 @@
 ---
+layout: experiment
+
 image:  /assets/img/experiments/playground.png
 links:
     app:    /

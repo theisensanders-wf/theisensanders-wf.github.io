@@ -1,5 +1,7 @@
 ---
-title:  Gulp-Jekyll Harmony
+layout: experiment
+title:  Gulp-Jekyll Build Setup
+
 image:  /assets/img/experiments/octocat.png
 links:
     app:    https://gist.github.com/trsanders/72d6b4542197f9085f32

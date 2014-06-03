@@ -1,5 +1,6 @@
 ---
 layout: experiment
+title: WebFilings Guru
 
 image:  /assets/img/experiments/wf-guru.png
 links:

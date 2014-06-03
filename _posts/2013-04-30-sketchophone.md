@@ -1,4 +1,6 @@
 ---
+layout: experiment
+
 image:  /assets/img/experiments/sketchophone.png
 links:
     app:    https://sketchophone.appspot.com/
