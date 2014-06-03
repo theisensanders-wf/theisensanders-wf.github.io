@@ -1,0 +1,19 @@
+{
+  "name": "theisensanders",
+  "version": "3.0.0",
+  "description": "My Website",
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/trsanders/trsanders.github.io.git"
+  },
+  "bugs": {
+    "url": "https://github.com/trsanders/trsanders.github.io/issues"
+  },
+  "devDependencies": {
+    "gulp": "~3.7.0",
+    "gulp-livereload": "~1.5.0",
+    "gulp-sass": "~0.7.1",
+    "express": "~4.4.1",
+  }
+}

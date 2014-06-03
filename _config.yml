@@ -1,14 +1,18 @@
-# Site Variables
 title: Theisen Sanders
 short_title: Theisen
 url: http://theisensanders.com
-thumbnail: /assets/img/theisen.png
+thumbnail: /assets/img/portrait.png
 description: >
     A web development and design playground for software developer Theisen Sanders
 
-# Build Variables
+
 permalink: /playground/:title
 markdown: redcarpet
-
 redcarpet:
   extensions: [tables, strikethrough]
+
+exclude:
+    - package.json
+    - gulpfile.js
+    - CNAME
+    - node_modules
