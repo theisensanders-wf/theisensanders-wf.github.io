@@ -11,6 +11,10 @@ markdown: redcarpet
 redcarpet:
   extensions: [tables, strikethrough]
 
+gems:
+  - jekyll-redirect-from
+  - jekyll-sitemap
+
 exclude:
     - package.json
     - gulpfile.js
