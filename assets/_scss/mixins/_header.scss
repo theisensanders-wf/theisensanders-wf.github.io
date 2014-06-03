@@ -3,12 +3,22 @@ $logo-height: 50px;
 $padding: ($height - $logo-height) / 2;
 
 #header {
-    height: $height;
     padding-top: $padding;
     
     .header-left {
+        text-align: center;
+
+        @media(min-width: $screen-md-min) {
+            text-align: left;
+
+            .logo {
+                font-size: 36px;
+            }
+        }
+
         .logo {
             margin: 0;
+            font-size: 24px;
 
             img {
                 height: $logo-height;
@@ -33,6 +43,11 @@ $padding: ($height - $logo-height) / 2;
 
     .header-right {
         text-align: right;
+        display: none;
+
+        @media(min-width: $screen-md-min) {
+            display: block;
+        }
 
         .btn.btn-lg {
             font-family: $header-font;

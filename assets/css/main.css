@@ -44,37 +44,58 @@ a:hover {
 
 /* line 5, ../_scss/mixins/_header.scss */
 #header {
-  height: 90px;
   padding-top: 20px;
 }
-/* line 10, ../_scss/mixins/_header.scss */
+/* line 8, ../_scss/mixins/_header.scss */
+#header .header-left {
+  text-align: center;
+}
+@media (min-width: 992px) {
+  /* line 8, ../_scss/mixins/_header.scss */
+  #header .header-left {
+    text-align: left;
+  }
+  /* line 14, ../_scss/mixins/_header.scss */
+  #header .header-left .logo {
+    font-size: 36px;
+  }
+}
+/* line 19, ../_scss/mixins/_header.scss */
 #header .header-left .logo {
   margin: 0;
+  font-size: 24px;
 }
-/* line 13, ../_scss/mixins/_header.scss */
+/* line 23, ../_scss/mixins/_header.scss */
 #header .header-left .logo img {
   height: 50px;
 }
-/* line 17, ../_scss/mixins/_header.scss */
+/* line 27, ../_scss/mixins/_header.scss */
 #header .header-left .logo a {
   color: #b0b0b0;
   text-decoration: none;
   letter-spacing: 1px;
   word-spacing: -8px;
 }
-/* line 23, ../_scss/mixins/_header.scss */
+/* line 33, ../_scss/mixins/_header.scss */
 #header .header-left .logo a .lastname {
   color: #4a90e2;
 }
-/* line 27, ../_scss/mixins/_header.scss */
+/* line 37, ../_scss/mixins/_header.scss */
 #header .header-left .logo a:hover {
   text-decoration: none;
 }
-/* line 34, ../_scss/mixins/_header.scss */
+/* line 44, ../_scss/mixins/_header.scss */
 #header .header-right {
   text-align: right;
+  display: none;
 }
-/* line 37, ../_scss/mixins/_header.scss */
+@media (min-width: 992px) {
+  /* line 44, ../_scss/mixins/_header.scss */
+  #header .header-right {
+    display: block;
+  }
+}
+/* line 52, ../_scss/mixins/_header.scss */
 #header .header-right .btn.btn-lg {
   font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-top: 2.5px;
