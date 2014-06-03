@@ -10,25 +10,27 @@ $padding: ($height - $logo-height) / 2;
 
         @media(min-width: $screen-md-min) {
             text-align: left;
-
-            .logo {
-                font-size: 36px;
-            }
         }
 
         .logo {
             margin: 0;
             font-size: 24px;
+            word-spacing: -5px;
+
+            @media(min-width: $screen-md-min) {
+                font-size: 34px;
+                word-spacing: -8px;
+            }
 
             img {
                 height: $logo-height;
+                margin-right: 8px;
             }
 
             a {
                 color: $gray;
                 text-decoration: none;
                 letter-spacing: 1px;
-                word-spacing: -8px;
 
                 .lastname {
                     color: $primary;
