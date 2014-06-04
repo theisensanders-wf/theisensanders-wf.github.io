@@ -4,6 +4,7 @@ $header-font: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
 body {
     font-family: $body-font;
     color: transparentize($black, 0.2);
+    -webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -13,6 +14,7 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
     text-decoration: none;
+    color: $primary;
 
     &.link-underline {
         border-bottom: 1px dashed $primary;
@@ -20,8 +22,8 @@ a {
 
     &:hover {
         text-decoration: none;
-        color: darken($primary, 25%);
-        border-bottom-color: darken($primary, 25%);
+        color: $primary-dk;
+        border-bottom-color: $primary-dk;
     }
 }
 

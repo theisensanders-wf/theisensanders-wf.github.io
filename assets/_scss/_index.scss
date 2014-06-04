@@ -1,16 +1,29 @@
 .jumbotron {
-    padding-top: 40px;
     text-align: center;
+    margin-top: 20px;
+
+    @media(min-width: $screen-sm-min) {
+        margin-top: 40px;
+    }
 
     p {
-        font-size: 40px;
+        font-size: 36px;
         color: $primary;
-        line-height: 60px;
+        line-height: 54px;
+
+        @media(min-width: $screen-sm-min) {
+            font-size: 40px;
+            line-height: 60px;
+        }
     }
 
     img {
-        margin-top: 20px;
+        margin-top: 40px;
         width: 100%;
-        max-width: 800px;
+        max-width: 1000px;
+
+        @media(min-width: $screen-sm-min) {
+            margin-top: 80px;
+        }
     }
 }
