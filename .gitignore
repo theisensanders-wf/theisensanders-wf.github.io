@@ -1,9 +1,17 @@
+// Jekyll
 _site
 
-.sass-cache
 
+// Node
+node_modules
+
+
+// Compass
+.sass-cache
+*.css.map
+
+
+// Editors/IDEs
 .idea
 *.sublime-workspace
 *.sublime-project
-
-node_modules
