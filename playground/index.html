@@ -11,7 +11,13 @@ layout: default
 
         <div class="col-md-6 experiment-container">
             <div class="experiment">
-                {% assign url = post.links.app or post.links.github %}
+                {% if post.links.app %}
+                    {% assign url = post.links.app %}
+                {% elsif post.links.github %}
+                    {% assign url = post.links.github  %}
+                {% else %}
+                    {% assign url = null %}
+                {% endif %}
 
                 <h3 class="experiment-title">
                     {% if url != null %}<a href="{{ url` }}">{{ post.title }}</a>
