@@ -5,11 +5,8 @@ thumbnail: /assets/img/portrait.png
 description: >
     A web development and design playground for software developer Theisen Sanders
 
-
 permalink: /playground/:title
-markdown: redcarpet
-redcarpet:
-  extensions: [tables, strikethrough]
+markdown: kramdown
 
 gems:
   - jekyll-redirect-from
