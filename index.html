@@ -1,40 +1,27 @@
 ---
 layout: default
-redirect_from:
-    - /blog/
 ---
 
-<div id="experiments">
-    <p class="lead text-center">Here are some of my experiments in web development and design.</p>
+<section>
+  <h1>Theisen Sanders</h1>
+</section>
 
-    {% for post in site.posts %}
-        {% assign mod = forloop.index | modulo:2 %}
-        {% if mod == 1 %}<div class="row">{% endif %}
+<section>
+  <h5>About Me</h5>
+  <p>I am a Senior Software Engineer at <a href="https://workiva.com">Workiva</a>. I graduated from
+    Iowa State University in 2013 with a Computer Science degree. Check out my resume for my experience,
+    and I'll use this website semi-infrequently to post projects I'm working on.</p>
 
-        <div class="col-md-6 experiment-container">
-            <div class="experiment">
-                {% if post.links.app %}
-                    {% assign url = post.links.app %}
-                {% elsif post.links.github %}
-                    {% assign url = post.links.github  %}
-                {% else %}
-                    {% assign url = null %}
-                {% endif %}
+  <a class="button button-primary" href="">Resume</a>
+  <a class="button button-primary" href="https://github.com/theisensanders-wf">Github</a>
+  <a class="button button-primary" href="https://twitter.com/theisensanders">Twitter</a>
+</section>
 
-                <h3 class="experiment-title">
-                    {% if url != null %}<a href="{{ url` }}">{{ post.title }}</a>
-                    {% else %}{{ post.title }} {% if post.eta %}[Coming Soon]{% endif %}{% endif %}
-                </h3>
-                {% if url != null %}<a href="{{ url }}">{% endif %}
-                <img class="experiment-logo" src="{{ post.image }}">
-                {% if url != null %}</a>{% endif %}
-                <div class="experiment-body">
-                    <p class="experiment-date">{{ post.date | date:"%B %Y" }}</p>
-                    <p class="experiment-description">{{ post.excerpt }}</p>
-                </div>
-            </div>
-        </div>
-
-        {% if mod == 0 %}</div>{% endif %}
-    {% endfor %}
-</div>
+{% for post in site.posts %}
+<section>
+  <h5>{{ post.title }}</h5>
+  <h6>{{ post.date | date:"%B %d, %Y" }}</h6>
+  <p>{{ post.content }}</p>
+  {% if post.links.github %}<a class="button" href="{{ post.links.github }}">Github</a>{% endif %}
+</section>
+{% endfor %}

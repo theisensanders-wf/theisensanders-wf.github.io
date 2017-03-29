@@ -1,47 +1,42 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        {% include meta.html %}
+<html lang="en">
+<head>
 
-        <link rel="stylesheet" href="/assets/css/vendor/bootstrap.min.css">
-        <link rel="stylesheet" href="/assets/css/main.css">
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Theisen Sanders</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-        <script src="/assets/js/vendor/modernizr.min.js"></script>
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <script data-cfasync="false" type="text/javascript" src="//use.typekit.net/sgy6ihx.js"></script>
-        <script data-cfasync="false" type="text/javascript">try{Typekit.load();}catch(e){}</script>
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
 
-        <div class="container">
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="/assets/css/normalize.css">
+  <link rel="stylesheet" href="/assets/css/skeleton.css">
+  <link rel="stylesheet" href="/assets/css/custom.css">
 
-            <div class="row">
-                <div class="col-md-12" id="header">
-                    {% include header.html %}
-                </div>
-            </div>
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
 
-            <div class="row">
-                <div class="col-md-12" id="content">
-                    {{ content }}
-                </div>
-            </div>
+</head>
+<body>
 
-            <div class="row">
-                <div class="col-md-12" id="footer"></div>
-            </div>
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    {{ content }}
+  </div>
 
-        </div>
-
-        <!-- <script src="/assets/js/main.js"></script> -->
-
-        {% include analytics.html %}
-    </body>
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
 </html>
-

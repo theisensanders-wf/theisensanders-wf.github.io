@@ -1,19 +1,2 @@
 .DS_Store
-
-// Jekyll
 _site
-
-
-// Node
-node_modules
-
-
-// Compass
-.sass-cache
-*.css.map
-
-
-// Editors/IDEs
-.idea
-*.sublime-workspace
-*.sublime-project
