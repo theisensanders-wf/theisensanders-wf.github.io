@@ -1,10 +1,7 @@
 ---
-layout: experiment
-title:  Snowstorm Javascript ORM
-
-image:  /assets/img/experiments/snowstorm.png
-links:
-    github:    https://github.com/trsanders/snowstorm
+layout: post
+title: Snowstorm - Javascript ORM
+github: snowstorm
 ---
 
 A simple Javascript ORM built for easily mapping rest api responses to front-end friendly objects
