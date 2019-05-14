@@ -1,4 +1,19 @@
 
+h1.name {
+    display:table;
+}
+
+h1.name span {
+    vertical-align:middle;
+    display:table-cell;
+}
+
+.profile-rounded {
+    height: 10rem;
+    border-radius: 4px;
+    margin-right: 2rem;
+}
+
 section {
     padding: 6rem 0;
 }
