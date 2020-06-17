@@ -6,12 +6,13 @@
   <meta name="description" content="Theisen Sanders, Software Engineer">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" href="{{ "/assets/css/bootstrap.min.css" | relative_url }}">
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway&display=swap""></noscript>
+  <link rel="stylesheet" href="{{ '/assets/css/bootstrap.min.css' | relative_url }}">
+
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family={{ site.font | uri_escape }}&display=swap"" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family={{ site.font | uri_escape }}&display=swap""></noscript>
   <style>
     body {
-      font-family: 'Raleway', var(--bs-font-sans-serif);
+      font-family: '{{site.font}}', var(--bs-font-sans-serif);
     }
   </style>
 </head>
