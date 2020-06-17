@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  Gulp-Jekyll Build Setup
+published: false
 gist: trsanders/72d6b4542197f9085f32
 ---
 
