@@ -8,11 +8,23 @@
 
   <link rel="stylesheet" href="{{ '/assets/css/bootstrap.min.css' | relative_url }}">
 
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family={{ site.font | uri_escape }}&display=swap"" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family={{ site.font | uri_escape }}&display=swap""></noscript>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family={{ site.font | uri_escape }}&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family={{ site.font | uri_escape }}&display=swap"></noscript>
   <style>
     body {
       font-family: '{{site.font}}', var(--bs-font-sans-serif);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      body {
+        background-color: #000;
+        color: var(--bs-light);
+      }
+
+      .text-muted, .btn-outline-secondary {
+        color: var(--bs-light) !important;
+        border-color: #f8f9fa;
+      }
     }
   </style>
 </head>
