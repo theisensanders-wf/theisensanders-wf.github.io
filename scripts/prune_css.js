@@ -1,13 +1,15 @@
 const fs = require('fs');
 const puppeteer = require('puppeteer');
 
-// https://stackoverflow.com/a/48452214
+// Adapted from https://stackoverflow.com/a/48452214
 (async () => {
-    const browser = await puppeteer.launch();
+    const browser = await puppeteer.launch({
+        args: [
+            '--window-size=1400,1080',
+        ],
+    });
     const page = await browser.newPage()
 
-    //Start sending raw DevTools Protocol commands are sent using `client.send()`
-    //First off enable the necessary "Domains" for the DevTools commands we care about
     const client = await page.target().createCDPSession()
     await client.send('Page.enable')
     await client.send('DOM.enable')
@@ -21,10 +23,14 @@ const puppeteer = require('puppeteer');
       }
     });
 
-    //Start tracking CSS coverage
     await client.send('CSS.startRuleUsageTracking')
 
     await page.goto(`http://localhost:4000`)
+
+    // Hit all of the page width breakpoints to capture media styles
+    for (let width of [1200, 992, 768, 576, 0]) {
+        await page.setViewport({width: width, height: 1080});
+    }
 
     const rules = await client.send('CSS.takeCoverageDelta')
     const usedRules = rules.coverage.filter(rule => {
